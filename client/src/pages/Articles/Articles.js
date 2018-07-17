@@ -10,13 +10,13 @@ import { Form, Input, FormBtn, FormGroup, Label } from "../../components/Form";
 
 export default class Articles extends Component {
   state = {
-    topic: '',//main search term
-    sYear: '',//start year for search
-    eYear: '',//end year for search
-    page: '0',//page of search results
-    results: [],//array of results returned from api
-    previousSearch: {},//previous search term saved after search completed
-    noResults: false,//boolean used as flag for conditional rendering
+    topic: '',
+    sYear: '',
+    eYear: '',
+    page: '0',
+    results: [],
+    previousSearch: {},
+    noResults: false,
   };
 
 
@@ -123,8 +123,8 @@ export default class Articles extends Component {
         <Row>
           <Col size="sm-10" offset='sm-1'>
             <Jumbotron>
-              <H1 className='page-header text-center'>New York Times Article Searcher</H1>
-              <H4 className='text-center'>Search for and save articles of interest</H4>
+              <H1 className='page-header text-center'>New York Times - Article Search</H1>
+              <H4 className='text-center'>Search for and save articles</H4>
             </Jumbotron>
             <Panel>
               <PanelHeading>
@@ -142,7 +142,7 @@ export default class Articles extends Component {
                     />
                   </FormGroup>
                   <FormGroup >
-                    <Label htmlFor="sYear">Enter a beginning date to search htmlFor (optional):</Label>
+                    <Label htmlFor="sYear">Enter a beginning date to search from (optional):</Label>
                     <Input
                       onChange={this.handleInputChange}
                       type='date'
@@ -152,7 +152,7 @@ export default class Articles extends Component {
                     />
                   </FormGroup>
                   <FormGroup >
-                    <Label htmlFor="eYear">Enter an end date to search for (optional):</Label>
+                    <Label htmlFor="eYear">Enter an end date to search up to (optional):</Label>
                     <Input
                       onChange={this.handleInputChange}
                       type='date'
