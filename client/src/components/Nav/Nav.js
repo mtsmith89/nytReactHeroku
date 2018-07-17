@@ -10,7 +10,7 @@ const Nav = () =>
         <Link to="/"><button type="button" className="btn btn-secondary">Home</button></Link>
       </li>
       <li className="nav-item">
-        <Link to="/savedArticles"><button type="button" className="btn btn-success">Saved Articles</button></Link>
+        <Link to="/savedArticles"><button type="button" className="btn btn-success">My Saved Articles</button></Link>
       </li>
     </ul>
 </nav>;
